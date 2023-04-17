@@ -1,5 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  *{
+	font-family: 'Poppins', sans-serif;
+  }
+
+  .carousel-heading-text{
+	font: 300 120px/104px'Poppins', sans-serif;
+    color: #E8F6FF;
+    margin-left: -5px;
+  }
+
+  .carousel-heading-text-red{
+	color: #FF5851;
+	font-size: 40px;
+	font-weight: bold;
+  }
+
+.carousel-heading-text-black{
+	color: #3D4461;
+	font-size: 45px;
+	font-weight: bolder;
+}
+
 .header1 a{
 	text-decoration: none;
 	/* width: 100%; */
@@ -150,8 +173,8 @@
 	 margin-left: auto;
 	 padding: 0.65rem 1.5rem;
 	 border-radius: 3rem;
-	 color: var(--color-white);
-	 background-color: var(--color-green-200);
+	 color: white;
+	 background-color: #FF5851;
 	 box-shadow: var(--shadow-medium);
 	 transition: all 0.3s ease-in-out;
 }
@@ -318,8 +341,39 @@
 	width: 300px;
 	overflow: hidden;
 	/* border: 1px solid red; */
-	background: rgb(80, 80, 25);
+	background: #FCFCFC;
 	position: relative; /* Added */
+	border-bottom:1px solid #dcdcdc ;
+	border-right: 1px solid #dcdcdc;
+}
+
+.box-danger:hover{
+	
+	border-bottom-color: #f00;
+	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
+	  
+
+  }
+  .box-primary:hover{
+	
+	border-bottom-color: blue;
+	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
+	  
+
+  }
+  .box-success:hover{
+	
+	border-bottom-color: green;
+	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
+	  
+
+  }
+  .box-warning:hover{
+	
+	border-bottom-color: orange;
+	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
+	  
+
   }
   
   .content {
@@ -329,14 +383,14 @@
 	right: 0;
 	padding: 20px;
 	box-sizing: border-box;
-	color: #fff;
+	color: #000000;
   }
   
   .hid-box {
 	top: 100%;
 	position: relative;
 	transition: all .3s ease-out;
-	background: #428bca;
+	background: #FCFCFC;
 	height: 100%;
   }
   

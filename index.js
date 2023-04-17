@@ -53,3 +53,21 @@ const swiper =new Swiper ('.card_slider', {
 		}
 	}
 });
+
+
+
+// Get the dropdown button and menu
+var dropdownBtn = document.getElementById("dropdownBtn");
+var dropdownMenu = document.getElementById("dropdownMenu");
+
+// Add click event listener to toggle dropdown menu
+dropdownBtn.addEventListener("click", function () {
+	dropdownMenu.classList.toggle("show");
+});
+
+// Close dropdown menu when clicking outside of it
+window.addEventListener("click", function (event) {
+	if (!event.target.matches(".btn.dropdown-toggle")) {
+		dropdownMenu.classList.remove("show");
+	}
+});
