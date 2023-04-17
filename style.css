@@ -98,11 +98,13 @@ body {
 }
     .card-category-1 div, .card-category-2 div {
         display:inline-block;
+        width: 18rem;
     }
 
     .card-category-1 > div, .card-category-2 > div:not(:last-child) {
         margin: 10px 5px;
         text-align: left;
+
     }
 
 

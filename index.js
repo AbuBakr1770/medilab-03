@@ -29,11 +29,42 @@ const swiper =new Swiper ('.card_slider', {
 	pagination: {
 	  el: '.swiper-pagination',
 	},
+	loop:true,
+	autoplay: {
+		delay: 2000, // Set delay between slide transitions in milliseconds
+		disableOnInteraction: false, // Allow autoplay to continue even if user interacts with the slider
+	  },
   
 	// Navigation arrows
 	navigation: {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
+	},
+  
+	// And if we need scrollbar
+	// scrollbar: {
+	//   el: '.swiper-scrollbar',
+	// },
+  });
+
+  const swiper2 = new Swiper ('#hospital_slider', {
+	
+	// If we need pagination
+	pagination: {
+	  el: '.swiper-pagination',
+	},
+  
+	loop:true,
+	slidesPerView:3,
+	spaceBetween:20,
+	autoplay: {
+		delay: 2000, // Set delay between slide transitions in milliseconds
+		disableOnInteraction: false, // Allow autoplay to continue even if user interacts with the slider
+	  },
+	// Navigation arrows
+	navigation: {
+		prevEl: '.swiper-button-prev',
+	  nextEl: '.swiper-button-next',
 	},
   
 	// And if we need scrollbar
