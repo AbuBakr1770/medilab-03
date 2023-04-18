@@ -307,7 +307,7 @@
 
   .swiper-content-slide{
 	background-color: #E4F2FB;
-	height: 70vh;
+	height: auto;
   }
 
 
