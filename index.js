@@ -66,6 +66,27 @@ const swiper =new Swiper ('.card_slider', {
 		prevEl: '.swiper-button-prev',
 	  nextEl: '.swiper-button-next',
 	},
+
+	 // Define breakpoints
+	 breakpoints: {
+		// When window width is >= 768px
+		768: {
+		  slidesPerView: 3,
+		  spaceBetween: 20,
+		},
+
+		// When window width is >= 768px
+		530: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		  },
+		// When window width is >= 320px
+		320: {
+		  slidesPerView: 1,
+		  spaceBetween: 30,
+		},
+		// Add more breakpoints as needed
+	  },
   
 	// And if we need scrollbar
 	// scrollbar: {
