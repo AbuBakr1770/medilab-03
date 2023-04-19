@@ -1,53 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap");
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
   *{
 	font-family: 'Poppins', sans-serif;
   }
 
-
-  @media (min-width: 1px) and (max-width: 767px) {
-	.carousel{
-		height:65vh;
-		background-color: #E4F2FB;
-	  }
-	
+  
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 15px 0;
+    top: 40px;
+    box-shadow: 0px 2px 15px rgba(25, 119, 204, 0.1);
+  }
+  
+  #header.header-scrolled {
+    top: 0;
+  }
+  
+  #header .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #header .logo a {
+    color: #2c4964;
+  }
+  
+  #header .logo img {
+    max-height: 40px;
   }
 
-  @media (min-width: 768px){
-	.carousel{
-		height:85vh;
-		background-color: #E4F2FB;
-	  }
-	
-  }
-
-
-
-
- 
-
-  .carousel-heading-text{
-	font: 300 120px/104px'Poppins', sans-serif;
-    color: #9aa0a3;
-    margin-left: -5px;
-  }
-
-  .carousel-heading-text-red{
-	color: #FF5851;
-	font-size: 40px;
-	font-weight: bold;
-  }
-
-.carousel-heading-text-black{
-	color: #3D4461;
-	font-size: 45px;
-	font-weight: bolder;
-}
-
-
-
-/* ======================NAVAR===================================== */
+  /* ======================NAVAR===================================== */
 
 .header1 a{
 	text-decoration: none;
@@ -324,297 +316,49 @@
     border-left: 0;
   }
 
-  
- /* ================swiper-=============== */
- .swiper {
-	width: 100%;
-	height: 70vh;
-  }
-
-  .swiper-content-slide{
-	background-color: #E4F2FB;
-	height: 80vh;
-	position: relative;
-  }
-
-
-  /* ===================search-img-bar================= */
-
-  @media (min-width: 1px) and (max-width: 576px) {
-	
-	.search-bar{
-		width: 90%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-  }
-
-  @media (min-width: 577px) and (max-width: 768px) {
-	
-	.search-bar{
-		width: 96%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-  }
-
-  @media (min-width: 769px) {
-	
-	.search-bar{
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: -7rem;
-	}
-  }
-
-  @media (min-width: 768px) and (max-width: 1141px) {
-	
-	.search-bar{
-		width: 98%;
-		
-		/* margin-top: -7rem; */
-	}
+  /* ====================Search Section====================================== */
+  .search-section{
+    
   }
 
   @media (min-width: 1px) and (max-width: 767px) {
-	
-	.show-text{
-		display: inline-block;
-		/* font-size: 16px;
-       font-weight: bolder;
-       padding: 5px; */
-	}
-  }
-  @media (min-width: 768px) {
-	
-	.show-text{
-		display: none;
-		
-		/* margin-top: -7rem; */
-	}
-  }
-
-
-  .search-heading{
-	font-size: 16px;
-	font-weight: bolder;
-	padding: 7px;
-	
-  }
-
-  .form-controlcss{
-	height: 50px !important;
-  }
-  
-
-  .search-bar{
-
-	/* border: 1px solid black; */
-	box-shadow:  -5px 0px 10px rgba(200, 200, 200, 0.5),
-	 5px 0px 10px rgba(200, 200, 200, 0.5),
-	 0px 5px 10px rgba(200, 200, 200, 0.5);
-  }
-  .search-img-bar{
-	background-color: #3D4461;
-	height: auto;
-  }
-
-  .additional-input {
-	display: none;
-}
-
-.search-row{
-	background-color: #FFFFFF;
-	z-index: 2;
-}
-
-
-
-.join-as-doctors{
+    .search-container{
+        background-color: #3D4461;
+        height: 25vh;
+      }
 
 }
 
-.join-team-search{
-	font-size: 16px;
-    display: block;
-    line-height: inherit;
-    font-weight: 400;
+@media (min-width: 768px) {
+    .search-container{
+        background-color: #3D4461;
+        height: 10vh;
+      }
 
 }
 
 
+  .search-input{
+    height: 6vh;
+  }
 
-
-
-  /* =====================services================== */
-  h1 {
-	margin: 0;
+  #myDiv {
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: #31364E;
+    /* transition: display 5s linear; */
+    /* transition: height 3s linear; */
   }
   
-  .box {
-	height: 200px;
-	width: 300px;
-	overflow: hidden;
-	/* border: 1px solid red; */
-	background: #FCFCFC;
-	position: relative; /* Added */
-	border-bottom:1px solid #dcdcdc ;
-	border-right: 1px solid #dcdcdc;
-}
-
-.box-danger:hover{
-	
-	border-bottom-color: #f00;
-	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
-	  
-
-  }
-  .box-primary:hover{
-	
-	border-bottom-color: blue;
-	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
-	  
-
-  }
-  .box-success:hover{
-	
-	border-bottom-color: green;
-	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
-	  
-
-  }
-  .box-warning:hover{
-	
-	border-bottom-color: orange;
-	transition:2px 1s linear; /* Add a transition for border color with linear timing function */
-	  
-
+  .show {
+    display: flex !important; /* Use !important to override display:none set initially */
+    justify-content: center;
+    align-items: center;
+    transition: height 3s linear;
   }
   
-  .content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	padding: 20px;
-	box-sizing: border-box;
-	color: #000000;
-  }
-
-  .hid-box {
-	top: 100%;
-	position: relative;
-	transition: all .3s ease-out;
-	box-sizing: border-box;
-	background: #FCFCFC;
-	/* padding: 20px; */
-	height: 100%;
-  }
-  
-  .box:hover > .hid-box {
-	top: 0;
-  }
-  
-  .services1-bg{
-	
-		background-image: url("http://amentotech.com/projects/doctreat/wp-content/uploads/2019/10/3.png");
-		background-position: bottom right;
-		background-repeat: no-repeat;
-		background-size: auto;
-		width: 100%;
-		height: 100%; /* set height for the div */
-		transition: background-image 0.5s ease;
-	  
-  }
-
-  .services1-bg:hover {
-	background-image: none; 
-  }
-  .services2-bg{
-	
-	background-image: url("http://amentotech.com/projects/doctreat/wp-content/uploads/2019/10/2.png");
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	background-size: auto;
-	width: 100%;
-	height: 100%; /* set height for the div */
-  
-}
-.services3-bg{
-	
-	background-image: url("http://amentotech.com/projects/doctreat/wp-content/uploads/2019/10/1.png");
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	background-size: auto;
-	width: 100%;
-	height: 100%; /* set height for the div */
-  
-}
-
-.services4-bg{
-	
-	background-image: url("http://amentotech.com/projects/doctreat/wp-content/uploads/2019/10/4.png");
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	background-size: auto;
-	width: 100%;
-	height: 100%; /* set height for the div */
-  
-}
-  
-
-
-  
-  
-  /*======================how it works?======================  */
-  .how-it-works{
-	background-color: #E8F6FF;
-	height: auto;
-  }
-
-  /* ======================Hospital============================ */
-  .hospital-swiper{
-	/* width: 600px; */
-	/* height: 300px; */
-	background-color: blue;
-  }
-
-  .hospital-img{
-	height: 30vh
-  }
-
-  .hospital-wrapper{
-	background-color: #1371A1;
-	height: 55vh;
-  }
-
-  /* ========================download=================================== */
-
-  .download{
-	background-color: #E8F6FF;
-  }
-  .download-text{
-	margin-bottom: 50px;
-  }
-
-  /* ==========================footer=================================== */
-
-  .upper-footer{
-
-	background-color: #E8F6FF;
-  }
-  .lower-footer{
-	background-color: #3D4461;
-
-  }
-
-  .lower-footer h5{
-	margin: 0;
-  }
-
-  .red-text{
-	color: #FF5851;
-	/* font-size: 40px; */
-	font-weight: bold;
+  .filters{
+    width: 95%;
   }
