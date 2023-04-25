@@ -25,10 +25,10 @@
 	<div id="topbar" class="d-flex align-items-center fixed-top poppins">
 		<div class="container d-flex justify-content-between">
 		  <div class="contact-info d-flex align-items-center">
-		<p>Emergency Help!</p>
-	</div>
-		  <div class="d-none d-lg-flex social-links align-items-center">
-			<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+		<p class="font-weight-bold">Emergency Help!</p>
+	     </div>
+		  <div class="d-none d-sm-flex social-links align-items-center">
+			<a href="#" class="twitter"><i class="bi bi-twitter fa-3x"></i></a>
 			<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
 			<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
 			<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
@@ -37,18 +37,13 @@
 	  </div>
 	</section>
 	  <!-- ===================NAV BAR========================== -->
-	  <section class="header1 poppins">
+	 <section class="header1 poppins">
 
 	 
-    <header class="header d-block">	
+    <header class="header">	
 	<div class="m-auto">
 		<nav class="navbar">
 			<a href="./index.html" class="brand">Brand</a>
-			<!-- <div class="burger" id="burger">
-				<span class="burger-line"></span>
-				<span class="burger-line"></span>
-				<span class="burger-line"></span>
-			</div> -->
 			<span class="overlay"></span>
 			<div class="menu m-auto" id="menu">
 				<ul class="menu-inner">
@@ -63,11 +58,7 @@
 			</div>
 			<i class="bi bi-cart2 m-0"></i>
 			<a href="./index.html" class="menu-block">Login</a>
-			<!-- <a href="./index.html" class="btn btn-outline-primary">Join now</a> -->
-
-			
-			
-			<div class="burger" id="burger">
+		<div class="burger" id="burger">
 				<span class="burger-line"></span>
 				<span class="burger-line"></span>
 				<span class="burger-line"></span>
@@ -79,13 +70,14 @@
 
 
 
+
 <!-- ===========================carousel========================================== -->
-<section class="carousel" style="margin-top: 15vh;">
-	<!-- Slider main container -->
-<div class="swiper card_slider w-100">
-	<!-- Additional required wrapper -->
+
+  <section class="carousel" style="margin-top: 15vh;">
+	
+<div class="swiper card_slider h-100 w-100">
+	
 	<div class="swiper-wrapper">
-	  <!-- Slides -->
 	  <div class="swiper-slide">
 		
 		<div class="swiper-content-slide">
@@ -145,22 +137,16 @@
 	</div></div>
 	  ...
 	</div>
-	<!-- If we need pagination -->
-	<!-- <div class="swiper-pagination"></div> -->
-  
-	<!-- If we need navigation buttons -->
 	<div class="swiper-button-prev"></div>
 	<div class="swiper-button-next"></div>
   
-	<!-- If we need scrollbar -->
-	<!-- <div class="swiper-scrollbar"></div> -->
-  </div>
+ </div>
 </section>
 
-
-
 <!-- ============================search======================================== -->
-<section class="search-bar" >
+
+
+ <section class="search-bar" >
 
 	
 <div class="row">
@@ -184,7 +170,6 @@
 						<button class="btn btn-primary w-100"><span class="show-text">Search Here</span> <i class="bi bi-search"></i></button>
 						</div>
 					  <div class="col-md-5 my-1">
-						<!-- Additional input field 1 -->
 						<select class="form-select additional-input form-controlcss" aria-label="Select an option">
 							<option selected>Desired Time</option>
 							<option value="option1">Option 1</option>
@@ -195,7 +180,6 @@
 						
 					</div>
 					<div class="col-md-5 my-1">
-						<!-- Additional input field 2 -->
 						<select class="form-select additional-input form-controlcss" aria-label="Select an option">
 							<option selected>Department</option>
 							<option value="option1">Option 1</option>
@@ -206,7 +190,6 @@
 				</div>
 				
 			
-				<!-- <hr> -->
 				<div class="d-flex align-items-end mt-auto">
 
 					<button class="w-75 mx-auto my-1 text-muted" id="toggleBtn"><i class="bi bi-search mx-1"></i>Advance Search</button>
@@ -216,7 +199,7 @@
 			</div>
 		</div>
 		
-		<div class="col-md-4 d-flex join-as-doctors flex-row search-img-bar text-center d-none d-sm-none d-md-flex">
+		<div class="col-md-4 d-flex join-as-doctors flex-row z-1 search-img-bar text-center d-none d-sm-none d-md-flex">
 			<div class="col-lg-6 d-none d-lg-flex">
 				<div class="d-flex justify-content-center align-items-end">
 
@@ -230,8 +213,8 @@
 						<p class="text-white font-weight-light m-0">
 							Are you a doctor?
 						</p>
-						<h4 class="text-white font-weight-bolder m-0">Join Our Team</h4>
-						<button class="btn btn-primary mt-2">join as Docotor</button>
+						<h4 class="text-white font-weight-bolder m-0 join-our-team">Join Our Team</h4>
+						<button class="btn btn-primary mt-2">Join us</button>
 				</div>
 			</div>
 			</div>
@@ -246,156 +229,100 @@
 </section>
 
 
+
+
+
+
 <!-- =======================services======================== -->
 
 
-<section class="services mt-5">
+ <section class="services mt-5">
 	<div class="text-center">
 
 		<h3>We offer <span class="red-text">services</span> in</h3>
 	</div>
 	<div class="d-flex row w-100 overflow-hidden">
-<div class="box col-md-3 box-success">
-		<div class="content services1-bg">
-			<!-- <h4>Live chat with</h4> -->
-			<h3 class="text-success">Urology</h3>
-		</div>
-		<div class="hid-box content w-100">
-			<!-- <h4>Live chat with</h4> -->
-			<h3 class="text-success d-">Urology</h3>
-			<div class="row mt-4 d-flex justify-content-between align-items-center">
 
-				<div class="col-md-6">
-					<ul>
-						<li>Service 1</li>
-						<li>Service 3</li>
-						<li>Service 6</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<ul>
-						<li>Service 2</li>
-						<li>Service 4</li>
-						<li>Service 5</li>
-					</ul>
 
-				</div>
-				
+		<div class="box col-md-3 box-primary">
+			<div class="content services2-bg">
 			
-
-
-
 			</div>
+			<div class="hid-box w-100">
+				<div class="h-50 d-flex flex-column justify-content-end">
+					<h3 class="text-success mb-0">urology</h3>
 
-			
+				</div>
+				<div class="d-flex h-50 justify-content-center align-items-center">
+					<button class="btn btn-lg btn-outline-success">
+					 book now
+				 </button>
+	 
+				 </div>
+	
+				
+			</div>
+		  </div>
 
-			
-		</div>
-	  </div>
+
+
 	  <div class="box col-md-3 box-primary">
 		<div class="content services2-bg">
 		
-			<!-- <h4>Live chat with</h4> -->
-			<h3 class="text-primary">MRI & CT SCAN</h3>
 		</div>
 		<div class="hid-box w-100">
-			<h3 class="text-primary">MRI & CT SCAN</h3>
-
-			<div class="row mt-4 d-flex justify-content-between align-items-center">
-
-				<div class="col-md-6">
-					<ul>
-						<li>Service 1</li>
-						<li>Service 3</li>
-						<li>Service 6</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<ul>
-						<li>Service 2</li>
-						<li>Service 4</li>
-						<li>Service 5</li>
-					</ul>
+				<div class="h-50 d-flex flex-column justify-content-end">
+					<h3 class="text-primary  mb-0">MRI & CT SCAN</h3>
 
 				</div>
-				
+
+			<div class="d-flex h-50 justify-content-center align-items-center">
+				<button class="btn btn-lg btn-outline-primary">
+				 book now
+			 </button>
+ 
+			 </div>
+
 			
-
-
-
-			</div>
 		</div>
 	  </div>
 	  <div class="box col-md-3 d-none d-sm-none d-md-flex box-warning">
 		<div class="content services3-bg">
 		
-			<!-- <h4>Live chat with</h4> -->
-			<h3 class="text-warning">Gynecology, Mammalogy
-
-				</h3>
 		</div>
 		<div class="hid-box w-100">
-			<h3 class="text-warning">Gynecology, Mammalogy</h3>
-
-			<div class="row mt-4 d-flex justify-content-between align-items-center">
-
-				<div class="col-md-6">
-					<ul>
-						<li>Service 1</li>
-						<li>Service 3</li>
-						<li>Service 6</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<ul>
-						<li>Service 2</li>
-						<li>Service 4</li>
-						<li>Service 5</li>
-					</ul>
-
-				</div>
-				
-			
-
-
+			<div class="h-50  d-flex flex-column justify-content-end">
+				<h3 class="text-warning mb-0">Gynecology, Mammalogy</h3>
 
 			</div>
+
+			<div class="d-flex h-50 justify-content-center align-items-center ">
+				<button class="btn btn-lg btn-outline-warning">
+				 book now
+			 </button>
+ 
+			 </div>
 		</div>
 	  </div>
 	  <div class="box col-md-3 d-none d-sm-none d-md-flex box-danger">
 		<div class="content services4-bg">
 		
-			<!-- <h4>Live chat with</h4> -->
-			<h3 class="text-danger">Cancer Treatment</h3>
 		</div>
 		<div class="hid-box w-100">
-			<h3 class="text-danger ">Cancer Treatment</h3>
-
-			
-				
-			<div class="row mt-4 d-flex justify-content-between align-items-center">
-
-				<div class="col-md-6">
-					<ul>
-						<li>Service 1</li>
-						<li>Service 3</li>
-						<li>Service 6</li>
-					</ul>
-				</div>
-				<div class="col-md-6">
-					<ul>
-						<li>Service 2</li>
-						<li>Service 4</li>
-						<li>Service 5</li>
-					</ul>
-
-				</div>
-				
-			
-
-
+			<div class="h-50 d-flex flex-column justify-content-end">
+				<h3 class="text-danger mb-0">Cancer Treatment</h3>
 
 			</div>
+
+			
+				
+	
+			<div class="d-flex h-50 justify-content-center align-items-center">
+				<button class="btn btn-lg btn-outline-danger">
+				 book now
+			 </button>
+ 
+			 </div>
 			
 		</div>
 	  </div>
@@ -403,12 +330,14 @@
 	</div>
 	
 	  
-</section> 
+</section>
 
 
 
 
 <!-- =====================how it works============================== -->
+
+
 <section class="how-it-works mt-3">
 <div class="hero-text text-center w-75 m-auto mt-5">
 	<div class="invisible" style="margin: 35px;">.</div>
@@ -422,23 +351,20 @@
 </div>
 <div class="row w-75 d-flex justify-content-center align-items-center m-auto text-center">
 	<div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
-		<!-- <img src="" alt=""> -->
-		<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-01-3.png" style="height: 90px; width: 90px;" alt="">
+		<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-01-3.png" class="hiw-img" alt="">
 
 		<p class="mt-5">Search Best Online</p>
 		<h3 class="font-weight-bold">Professionals</h3>
 	</div>
 
 	<div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
-		<!-- <img src="" alt=""> -->
-		<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-03-3.png" style="height: 90px; width: 90px;" alt="">
+		<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-03-3.png" class="hiw-img" alt="">
 		<p class="mt-5">Leave your</p>
 		<h3 class="font-weight-bold">FeedBack</h3>
 		</div>
 
 	<div class="col-md-4 d-flex justify-content-center align-items-center flex-column">
-		<!-- <img src="" alt=""> -->
-		<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-02-4.png" style="height: 90px; width: 90px;" alt="">
+		<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-02-4.png" class="hiw-img" alt="">
 		<p class="mt-5">Get an instant</p>
 		<h3 class="font-weight-bold">Appointment</h3>
 	</div>
@@ -447,10 +373,115 @@
 	<div class="invisible" style="margin: 35px;">.</div>
 </div>
 
-	
-
-
 </section>
+
+
+
+
+    <!-- ======= Departments Section ======= -->
+	<div class="invisible" style="margin: 35px;">.</div>
+
+    <section id="departments" class="departments">
+		<div class="container">
+  
+		  <div class="section-title">
+			<h2 class="text-center red-text">Departments</h2>
+			<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+		  </div>
+  
+		  <div class="row gy-4">
+			<div class="col-lg-3">
+			  <ul class="nav nav-tabs flex-column">
+				<li class="nav-item">
+				  <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Cardiology</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Neurology</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Hepatology</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Pediatrics</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Eye Care</a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-lg-9">
+			  <div class="tab-content">
+				<div class="tab-pane active show" id="tab-1">
+				  <div class="row gy-4">
+					<div class="col-lg-8 details order-2 order-lg-1">
+					  <h3>Cardiology</h3>
+					  <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+					  <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+					</div>
+					<div class="col-lg-4 text-center order-1 order-lg-2">
+					  <img src="assets/img/departments-1.jpg" alt="" class="img-fluid">
+					</div>
+				  </div>
+				</div>
+				<div class="tab-pane" id="tab-2">
+				  <div class="row gy-4">
+					<div class="col-lg-8 details order-2 order-lg-1">
+					  <h3>Neurology</h3>
+					  <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+					  <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+					</div>
+					<div class="col-lg-4 text-center order-1 order-lg-2">
+					  <img src="assets/img/departments-2.jpg" alt="" class="img-fluid">
+					</div>
+				  </div>
+				</div>
+				<div class="tab-pane" id="tab-3">
+				  <div class="row gy-4">
+					<div class="col-lg-8 details order-2 order-lg-1">
+					  <h3>Hepatology</h3>
+					  <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+					  <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+					</div>
+					<div class="col-lg-4 text-center order-1 order-lg-2">
+					  <img src="assets/img/departments-3.jpg" alt="" class="img-fluid">
+					</div>
+				  </div>
+				</div>
+				<div class="tab-pane" id="tab-4">
+				  <div class="row gy-4">
+					<div class="col-lg-8 details order-2 order-lg-1">
+					  <h3>Pediatrics</h3>
+					  <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+					  <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+					</div>
+					<div class="col-lg-4 text-center order-1 order-lg-2">
+					  <img src="assets/img/departments-4.jpg" alt="" class="img-fluid">
+					</div>
+				  </div>
+				</div>
+				<div class="tab-pane" id="tab-5">
+				  <div class="row gy-4">
+					<div class="col-lg-8 details order-2 order-lg-1">
+					  <h3>Eye care</h3>
+					  <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+					  <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+					</div>
+					<div class="col-lg-4 text-center order-1 order-lg-2">
+					  <img src="assets/img/departments-5.jpg" alt="" class="img-fluid">
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+  
+		</div>
+	  </section>
+
+	  <div class="invisible" style="margin: 35px;">.</div>
+	  
+	  <!-- End Departments Section -->
+  
 
 <!-- ======================Doctors================================== -->
 
@@ -467,14 +498,12 @@
 	<div class="doctors-cards">
 		
 
-		       <!-- Image Cards -->
-			   <div class="card-category-2">
+		       <div class="card-category-2">
 				<ul>
 					<li>
 						<div class="img-card iCard-style1">
 							<div class="card-content">
 							  <div class="card-image">
-								<!-- <span class="card-title">Cloud Beauty</span> -->
 								<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/11/20-255x250.jpg"/>
 							  </div>
 							  <div class="card-body" style="margin: 0; padding: 0;">
@@ -501,7 +530,6 @@
 						<div class="img-card iCard-style1">
 							<div class="card-content">
 							  <div class="card-image">
-								<!-- <span class="card-title">Cloud Beauty</span> -->
 								<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/11/06-255x250.jpg"/>
 							  </div>
 							  <div class="card-body" style="margin: 0; padding: 0;">
@@ -521,7 +549,6 @@
 						<div class="img-card iCard-style1">
 							<div class="card-content">
 							  <div class="card-image">
-								<!-- <span class="card-title">Cloud Beauty</span> -->
 								<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/11/05-255x250.jpg"/>
 							  </div>
 							  <div class="card-body" style="margin: 0; padding: 0;">
@@ -541,7 +568,6 @@
 						<div class="img-card iCard-style1">
 							<div class="card-content">
 							  <div class="card-image">
-								<!-- <span class="card-title">Cloud Beauty</span> -->
 								<img src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/11/15-255x250.jpg"/>
 							  </div>
 							  <div class="card-body" style="margin: 0; padding: 0;">
@@ -602,12 +628,10 @@
 <!-- ==========================Hospitals======================================== -->
 
 <section class="Hospitals my-5">
-	<h1 class="text-center" >Our Best <span class="carousel-heading-text-red" >Hospitals</span> </h1>
+	<h1 class="text-center text-white " style="background-color: #1371A1; margin-bottom: -1px;padding: 1%;" >Our Best <span class="carousel-heading-text-red" >Hospitals</span> for your medical treatment</h1>
 	
-	<div class="swiper hospital_slider hospital-wrapper w-100" id="hospital_slider">
-		<!-- Additional required wrapper -->
+	<div class="swiper hospital_slider hospital-wrapper w-100" style="padding: 2%;" id="hospital_slider">
 		<div class="swiper-wrapper hospital-wrapper">
-		  <!-- Slides -->
 		  <div class="swiper-slide d-flex justify-content-center align-items-center flex-column">
 			
 			<img src="./assets/hospital-1.jpg" class="hospital-img" alt="">
@@ -616,50 +640,61 @@
 		  <div class="swiper-slide d-flex justify-content-center align-items-center flex-column">
 			
 			<img src="./assets/hospital-1.jpg" class="hospital-img" alt="">
-			<h3 class="text-white">hospital-1</h3>
+			<h3 class="text-white">hospital-2</h3>
 		  </div>
 		  <div class="swiper-slide d-flex justify-content-center align-items-center flex-column">
 			
 			<img src="./assets/hospital-1.jpg" class="hospital-img" alt="">
-			<h3 class="text-white">hospital-1</h3>
+			<h3 class="text-white">hospital-3</h3>
 		  </div>
 		  <div class="swiper-slide d-flex justify-content-center align-items-center flex-column">
 			
 			<img src="./assets/hospital-1.jpg" class="hospital-img" alt="">
-			<h3 class="text-white">hospital-1</h3>
+			<h3 class="text-white">hospital-4</h3>
 		  </div>
 		  <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
 
 			<img src="./assets/hospital-2.webp" class="hospital-img" alt="">
-			<h3 class="text-white">hospital-1</h3>
+			<h3 class="text-white">hospital-5</h3>
 		 
 	
 	</div>
 		  <div class="swiper-slide d-flex flex-column justify-content-center align-items-center">
 			<img src="./assets/hospital-3.jpg" class="hospital-img" alt="">
-			<h3 class="text-white">hospital-1</h3>	
+			<h3 class="text-white">hospital-6</h3>	
 		</div>
 		<div class="swiper-slide flex-column d-flex justify-content-center align-items-center">
 			<img src="./assets/hospital-3.jpg" class="hospital-img" alt="">
-			<h3 class="text-white">hospital-1</h3>
+			<h3 class="text-white">hospital-7</h3>
 		 
 		</div>
 
 
 
 
-		  
+		
+	</div>
+	
+	<!-- <div class="swiper-pagination"></div>
+	-->
+	<div class="swiper-button-next" style="
+		color: white;
+		font-size: 52px;
+		font-weight: bold;"></div>
+		<div class="swiper-button-prev" style=" color: white;
+		font-size: 52px;
+		font-weight: bold;"></div>
+	  
+	</div>
+	<div class="hospitals-button d-flex justify-content-center align-content-center" style="    background-color: #1371A1;
+    height: auto;
+    padding: 2%;
+    margin-top: -2px;">
+		<div class="">
+			<button class="btn btn-md btn-outline-light" >See all Hospitals</button>
 		</div>
-		<!-- If we need pagination -->
-		<div class="swiper-pagination"></div>
-	  
-		<!-- If we need navigation buttons -->
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-	  
-		<!-- If we need scrollbar -->
-		<!-- <div class="swiper-scrollbar"></div> -->
-	  </div>
+
+	</div>
 </section>
 
 
@@ -674,56 +709,57 @@
 			<div class="col-md-3 col-sm-6">
 				<ul>
 					<li><h5>By <span class="red-text">Speciality</span> </h5></li>
-					    <li>Surgery</li>
-						<li>Allergy & Immunology</li>
-						<li>Anesthesiology</li>
-						<li>Diagnostic radiology</li>
-						<li>Emergency medicine</li>
+						<li><a href="#">Surgery</a></li>
+						<li><a href="#">Allergy & Immunology</a></li>
+						<li><a href="#">Anesthesiology</a></li>
+						<li><a href="#">Diagnostic radiology</a></li>
+						<li><a href="#">Emergency medicine</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 col-sm-6">
 			
 				<ul>
 					<li><h5>Doctors In <span class="red-text">USA</span> </h5></li>
-					    <li>Allergy & Immunology in Turkey</li>
-						<li>Anesthesiology in Turkey</li>
-						<li>Dermatology in Turkey</li>
-						<li>Radiation oncology in Turkey</li>
-						<li>Surgery in Turkey</li>
+						<li><a href="#">Allergy & Immunology in Turkey</a></li>
+						<li><a href="#">Anesthesiology in Turkey</a></li>
+						<li><a href="#">Dermatology in Turkey</a></li>
+						<li><a href="#">Radiation oncology in Turkey</a></li>
+						<li><a href="#">Surgery in Turkey</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				
 				<ul>
 					<li><h5>Doctors In <span class="red-text">India</span> </h5></li>
-					    <li>Physical medicine in India</li>
-						<li>Preventive medicine in India</li>
-						<li>Psychiatry in India</li>
-						<li>Radiation oncology in India</li>
-						<li>Surgery in India</li>
+						<li><a href="#">Physical medicine in India</a></li>
+						<li><a href="#">Preventive medicine in India</a></li>
+						<li><a href="#">Psychiatry in India</a></li>
+						<li><a href="#">Radiation oncology in India</a></li>
+						<li><a href="#">Surgery in India</a></li>
 				</ul>
 			</div>
 			<div class="col-md-3 col-sm-6">
 				
 				<ul>
-					<li><h5>By <span class="red-text">Location</span> </h5></li>
-					    <li>United Kingdom( UK )</li>
-						<li>India</li>
-						<li>Australia</li>
-						<li>Turkey</li>
-						<li>United Arab Emirates</li>
+						<li><h5>By <span class="red-text">Location</span> </h5></li>
+						<li><a href="#">United Kingdom( UK )</a></li>
+						<li><a href="#">India</a></li>
+						<li><a href="#">Australia</a></li>
+						<li><a href="#">Turkey</a></li>
+						<li><a href="#">United Arab Emirates</a></li>
 				</ul>
 			</div>
 			<div class="invisible" style="margin: 13px;">.</div>
 		</div>
-
+	
 	</div>
-
+	
 	<div class="lower-footer text-center text-light">
 		<h5>Copyrights © 2023 by <span class="red-text">BigitX</span>
 			 <br>
 			 All Rights Reserved.</h5>
 	</div>
+	
 </footer>
 
 

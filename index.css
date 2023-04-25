@@ -8,7 +8,7 @@
 
   @media (min-width: 1px) and (max-width: 767px) {
 	.carousel{
-		height:65vh;
+		height:auto;
 		background-color: #E4F2FB;
 	  }
 	
@@ -16,7 +16,7 @@
 
   @media (min-width: 768px){
 	.carousel{
-		height:85vh;
+		height:80%;
 		background-color: #E4F2FB;
 	  }
 	
@@ -347,6 +347,50 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.search-img-bar{
+		z-index: 1;
+	}
+  }
+
+  
+  @media (min-height: 1px) and (max-height: 870px) {
+	
+	.search-bar{
+		/* width: 90%; */
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+	}
+
+	.search-img-bar{
+		z-index: 1;
+
+	}
+  }
+
+  @media screen and (min-height: 1px) and (max-height: 650px) {
+
+	.carousel{
+		height: 95%;
+	}
+
+	.card_slider{
+		height: 100%;
+	}
+
+  }
+
+  @media screen and (min-height: 800px) {
+
+	.search-bar{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: -6%;
+		/* background-color: red; */
+	}
+
   }
 
   @media (min-width: 577px) and (max-width: 768px) {
@@ -364,7 +408,15 @@
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
-		margin-top: -7rem;
+		/* margin-top: -8%; */
+		/* background-color: red; */
+	}
+  }
+
+  @media (min-width: 991px) {
+	
+	.join-our-team{
+		display: none;
 	}
   }
 
@@ -452,16 +504,7 @@
 	margin: 0;
   }
   
-  .box {
-	height: 200px;
-	width: 300px;
-	overflow: hidden;
-	/* border: 1px solid red; */
-	background: #FCFCFC;
-	position: relative; /* Added */
-	border-bottom:1px solid #dcdcdc ;
-	border-right: 1px solid #dcdcdc;
-}
+ 
 
 .box-danger:hover{
 	
@@ -491,6 +534,17 @@
 	  
 
   }
+
+  .box {
+	height: 200px;
+	width: 300px;
+	overflow: hidden;
+	/* border: 1px solid red; */
+	background: #FCFCFC;
+	position: relative; /* Added */
+	border-bottom:1px solid #dcdcdc ;
+	border-right: 1px solid #dcdcdc;
+}
   
   .content {
 	position: absolute;
@@ -503,11 +557,12 @@
   }
 
   .hid-box {
-	top: 100%;
+	top: 50%;
 	position: relative;
+
 	transition: all .3s ease-out;
 	box-sizing: border-box;
-	background: #FCFCFC;
+	background: #fcfcfc00;
 	/* padding: 20px; */
 	height: 100%;
   }
@@ -573,6 +628,81 @@
 	height: auto;
   }
 
+  .hiw-img{
+	height: 150px;
+    width: 150px;
+    border-radius: 129px;
+    padding: 34px;
+    background-color: white;
+  }
+
+  
+  
+/*--------------------------------------------------------------
+# Departments
+--------------------------------------------------------------*/
+.departments {
+	overflow: hidden !important;
+  }
+  
+  .departments .nav-tabs {
+	border: 0 !important;
+  }
+  
+  .departments .nav-link {
+	border: 0 !important;
+	padding: 12px 15px 12px 0 !important;
+	transition: 0.3s !important;
+	color: #2c4964 !important;
+	border-radius: 0 !important;
+	border-right: 2px solid #ebf1f6 !important;
+	font-weight: 600 !important;
+	font-size: 15px !important;
+  }
+  
+  .departments .nav-link:hover {
+	color: #1977cc !important;
+  }
+  
+  .departments .nav-link.active {
+	color: #FF5851 !important;
+	/* border-color: red !important; */
+	border: none !important;
+	border-right: 3px solid #FF5851 !important;
+  }
+  
+  .departments .tab-pane.active {
+	animation: fadeIn 0.5s ease-out !important;
+  }
+  
+  .departments .details h3 {
+	font-size: 26px !important;
+	font-weight: 600 !important;
+	margin-bottom: 20px !important;
+	color: #2c4964 !important;
+  }
+  
+  .departments .details p {
+	color: #777777 !important;
+  }
+  
+  .departments .details p:last-child {
+	margin-bottom: 0 !important;
+  }
+  
+  @media (max-width: 992px) {
+	.departments .nav-link {
+	  border: 0 !important;
+	  padding: 15px !important;
+	}
+  
+	.departments .nav-link.active {
+	  color: #fff !important;
+	  background: #1977cc !important;
+	}
+  }
+  
+
   /* ======================Hospital============================ */
   .hospital-swiper{
 	/* width: 600px; */
@@ -617,4 +747,14 @@
 	color: #FF5851;
 	/* font-size: 40px; */
 	font-weight: bold;
+  }
+
+  footer li a{
+	text-decoration: none;
+	color: black;
+  }
+
+  footer li a:hover{
+	text-decoration: none;
+	color: grey;
   }
