@@ -758,3 +758,26 @@
 	text-decoration: none;
 	color: grey;
   }
+
+  .footer-list li{
+	position: relative;
+  /* padding-left: 20px; */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  }
+
+  .footer-list li:hover {
+	padding-left: 20px;
+  }
+
+  .footer-list li:hover:before {
+	content: "";
+	position: absolute;
+	left:5px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background-color: #FF5851;
+  }
