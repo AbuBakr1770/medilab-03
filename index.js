@@ -31,8 +31,8 @@ const swiper =new Swiper ('.card_slider', {
 	},
 	loop:true,
 	autoplay: {
-		delay: 2000, // Set delay between slide transitions in milliseconds
-		disableOnInteraction: false, // Allow autoplay to continue even if user interacts with the slider
+		delay: 2000, 
+		disableOnInteraction: false,
 	  },
   
 	// Navigation arrows
