@@ -106,7 +106,7 @@ body {
 }
     .card-category-1 div, .card-category-2 div {
         display:inline-block;
-        width: 18rem;
+        width: 16rem;
     }
 
     .card-category-1 > div, .card-category-2 > div:not(:last-child) {
@@ -135,11 +135,12 @@ body {
             margin: auto;
             overflow: hidden;
             border-radius: 5px 5px 0px 0px;
-            height: 200px;
+            height: 31vh;
         }
 
         .img-card .card-image img {
-            width:100%;
+            width:auto;
+            height: auto;
             border-radius: 5px 5px 0px 0px;
             
             -webkit-transition: all 0.8s;
