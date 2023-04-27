@@ -146,6 +146,11 @@ body {
   width: 16rem;
 }
 
+
+.card-category-2 div:hover {
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .card-category-1 > div,
 .card-category-2 > div:not(:last-child) {
   margin: 10px 5px;
@@ -170,7 +175,7 @@ body {
   margin: auto;
   overflow: hidden;
   border-radius: 5px 5px 0px 0px;
-  height: 31vh;
+  height: 237px;
 }
 
 .img-card .card-image img {
@@ -189,10 +194,11 @@ body {
   -moz-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
+  opacity: .7;
 }
 
 .img-card .card-text {
-  padding: 0 15px 15px;
+  padding: 0 10px 6px;
   line-height: 1.5;
 }
 

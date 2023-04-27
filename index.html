@@ -28,11 +28,14 @@
   </head>
   <body>
     <!-- ==================TOP Bar===================== -->
-    <section class="top-bar">
-      <div id="topbar" class="d-flex align-items-center fixed-top poppins">
+
+    <section class="top-bar z-2">
+      <div id="topbar" class="d-flex align-items-center poppins">
         <div class="container d-flex justify-content-between">
           <div class="contact-info d-flex align-items-center">
-            <p class="font-weight-bold">Emergency Help!</p>
+            <p class="font-weight-bold" style="margin-top: 12px">
+              Emergency Help!
+            </p>
           </div>
           <div class="d-flex social-links align-items-center">
             <a href="#" class="twitter" style="font-size: 25px"
@@ -51,7 +54,9 @@
         </div>
       </div>
     </section>
+
     <!-- ===================NAV BAR========================== -->
+
     <section class="header1 poppins">
       <header class="header">
         <div class="m-auto">
@@ -60,7 +65,7 @@
             <span class="overlay"></span>
             <div class="menu m-auto" id="menu">
               <ul
-                class="menu-inner d-flex justify-content-center align-items-center"
+                class="menu-inner my-auto d-flex justify-content-center align-items-center"
               >
                 <li class="menu-item">
                   <a class="menu-link poppins" href="#">Home</a>
@@ -78,7 +83,9 @@
                   <a class="menu-link" href="#">Support</a>
                 </li>
                 <li>
-                  <a href="./index.html" class="btn btn-outline-primary"
+                  <a
+                    href="./index.html"
+                    class="btn btn-outline-primary join-now-nav"
                     >Join now</a
                   >
                 </li>
@@ -86,7 +93,7 @@
             </div>
             <i class="bi bi-cart" style="font-size: 24px"></i>
             <span class="badge badge-warning" id="lblCartCount">0</span>
-            <a href="./index.html" class="menu-block">Login</a>
+            <a href="./index.html" class="menu-block login-nav">Login</a>
             <div class="burger" id="burger">
               <span class="burger-line"></span>
               <span class="burger-line"></span>
@@ -99,10 +106,7 @@
 
     <!-- ===========================carousel========================================== -->
 
-    <section
-      class="carousel d-flex justify-content-center align-items-center"
-      style="margin-top: 15vh"
-    >
+    <section class="carousel d-flex justify-content-center align-items-center">
       <div class="swiper card_slider h-100 w-100">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -214,7 +218,7 @@
           <div class="row">
             <div class="col-md-5 my-1 w-100">
               <input
-                class="form-control form-controlcss w-100"
+                class="form-control form-controlcss w-100 search-bar-form-control"
                 type="text"
                 placeholder="Doctor,hospital e.t.c"
                 aria-label="default input example"
@@ -222,10 +226,12 @@
             </div>
             <div class="col-md-5 my-1 w-100">
               <select
-                class="form-select form-controlcss"
+                class="form-select form-controlcss search-bar-form-control"
                 aria-label="Select an option"
               >
-                <option selected>Location</option>
+                <option selected>
+                  <span class="text-muted">Location</span>
+                </option>
                 <option value="option1">Option 1</option>
                 <option value="option2">Option 2</option>
                 <option value="option3">Option 3</option>
@@ -233,14 +239,14 @@
               </select>
             </div>
             <div class="col-md-2 my-1 text-center">
-              <button class="btn btn-primary search-button ">
+              <button class="btn btn-primary search-button">
                 <span class="show-text">Search Here</span>
                 <i class="bi bi-search"></i>
               </button>
             </div>
             <div class="col-md-5 my-1">
               <select
-                class="form-select additional-input form-controlcss"
+                class="form-select additional-input form-controlcss search-bar-form-control"
                 aria-label="Select an option"
               >
                 <option selected>Desired Time</option>
@@ -252,7 +258,7 @@
             </div>
             <div class="col-md-5 my-1">
               <select
-                class="form-select additional-input form-controlcss"
+                class="form-select additional-input form-controlcss search-bar-form-control"
                 aria-label="Select an option"
               >
                 <option selected>Department</option>
@@ -271,7 +277,7 @@
           </div>
         </div>
 
-        <div class="col-md-4 d-flex join-as-doctors flex-row z-1 text-center">
+        <div class="col-md-4 join-as-doctors flex-row z-1 text-center">
           <div
             class="search-img-bar d-flex justify-content-center align-items-center"
           >
@@ -312,14 +318,14 @@
       </div>
       <div class="d-flex row w-100 overflow-hidden">
         <div class="box col-md-3 box-success">
-          <div class="content services2-bg"></div>
+          <div class="content services3-bg"></div>
           <div class="hid-box w-100">
             <div class="h-50 d-flex flex-column justify-content-end">
-              <h3 class="text-success mb-0">urology</h3>
+              <h3 class="text-success mb-1 ms-3 font-weight-bolder">Medical</h3>
             </div>
             <div class="d-flex h-50 justify-content-center align-items-center">
               <button class="btn btn-lg btn-outline-success services-button">
-                book now
+                See More
               </button>
             </div>
           </div>
@@ -329,26 +335,28 @@
           <div class="content services2-bg"></div>
           <div class="hid-box w-100">
             <div class="h-50 d-flex flex-column justify-content-end">
-              <h3 class="text-primary mb-0">MRI & CT SCAN</h3>
+              <h3 class="text-primary mb-1 font-weight-bolder">Transport</h3>
             </div>
 
             <div class="d-flex h-50 justify-content-center align-items-center">
               <button class="btn btn-lg btn-outline-primary services-button">
-                book now
+                See More
               </button>
             </div>
           </div>
         </div>
         <div class="box col-md-3 d-none d-sm-none d-md-flex box-warning">
-          <div class="content services3-bg"></div>
+          <div class="content services1-bg"></div>
           <div class="hid-box w-100">
             <div class="h-50 d-flex flex-column justify-content-end">
-              <h3 class="text-warning mb-0">Gynecology, Mammalogy</h3>
+              <h3 class="text-warning mb-1 font-weight-bolder">
+                Visa consultancy
+              </h3>
             </div>
 
             <div class="d-flex h-50 justify-content-center align-items-center">
               <button class="btn btn-lg btn-outline-warning services-button">
-                book now
+                See More
               </button>
             </div>
           </div>
@@ -357,12 +365,14 @@
           <div class="content services4-bg"></div>
           <div class="hid-box w-100">
             <div class="h-50 d-flex flex-column justify-content-end">
-              <h3 class="text-danger mb-0">Cancer Treatment</h3>
+              <h3 class="text-danger mb-1 font-weight-bolder">
+                Languange Translation
+              </h3>
             </div>
 
             <div class="d-flex h-50 justify-content-center align-items-center">
               <button class="btn btn-lg btn-outline-danger services-button">
-                book now
+                See More
               </button>
             </div>
           </div>
@@ -373,7 +383,7 @@
     <!-- =====================how it works============================== -->
 
     <section class="how-it-works mt-3">
-      <div class="hero-text text-center w-75 m-auto mt-5">
+      <div class="hero-text text-center container m-auto mt-5">
         <div class="invisible" style="margin: 10px">.</div>
         <p class="mb-0">We Made it simple</p>
         <h1 class="mt-0">
@@ -397,11 +407,13 @@
         <div
           class="col-md-4 d-flex justify-content-center align-items-center flex-column"
         >
-          <img
-            src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-01-3.png"
-            class="hiw-img"
-            alt=""
-          />
+          <div class="how-it-work-img">
+            <img
+              src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-01-3.png"
+              class="hiw-img"
+              alt=""
+            />
+          </div>
 
           <p class="mt-5">Search Best Online</p>
           <h3 class="font-weight-bold">Professionals</h3>
@@ -410,11 +422,13 @@
         <div
           class="col-md-4 d-flex justify-content-center align-items-center flex-column"
         >
-          <img
-            src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-03-3.png"
-            class="hiw-img"
-            alt=""
-          />
+          <div class="how-it-work-img">
+            <img
+              src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-03-3.png"
+              class="hiw-img"
+              alt=""
+            />
+          </div>
           <p class="mt-5">Leave your</p>
           <h3 class="font-weight-bold">FeedBack</h3>
         </div>
@@ -422,11 +436,13 @@
         <div
           class="col-md-4 d-flex justify-content-center align-items-center flex-column"
         >
-          <img
-            src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-02-4.png"
-            class="hiw-img"
-            alt=""
-          />
+          <div class="how-it-work-img">
+            <img
+              src="http://amentotech.com/projects/doctreat/wp-content/uploads/2019/08/img-02-4.png"
+              class="hiw-img"
+              alt=""
+            />
+          </div>
           <p class="mt-5">Get an instant</p>
           <h3 class="font-weight-bold">Appointment</h3>
         </div>
@@ -836,7 +852,7 @@
 
     <!-- ==========================Hospitals======================================== -->
 
-    <section class="Hospitals my-5">
+    <section class="Hospitals mt-5 mb-2">
       <h1
         class="text-center text-white"
         style="background-color: #1371a1; margin-bottom: -1px; padding: 1%"
@@ -923,9 +939,166 @@
       </div>
     </section>
 
-    <!-- ===========================footer============================================== -->
-    <footer class="w-100 overflow-hidden mt-2">
-      <div class="upper-footer">
+    <!-- =========================Hospitals-2 ========================================= -->
+
+	<h1
+        class="text-center"
+      >
+        Our Best <span class="carousel-heading-text-red">Hospitals</span> for
+        your medical treatment
+      </h1>
+
+	  <section class="doctors mt-2">
+		
+  
+		<div class="doctors-cards">
+		  <div class="card-category-2">
+			<ul>
+			  <li>
+				<div class="img-card iCard-style1">
+				  <div class="card-content">
+					<div class="card-image" style="height: 200px !important;"> 
+					  <img 
+						src="./assets/hospital-1.jpg"
+					  />
+					</div>
+					<div class="card-body" style="margin: 0; padding: 0">
+					  <p class="card-text text-primary" style="margin: 0">
+						Anesthesiology
+					</p>
+					  
+					  <div class="card-text" style="margin: 0">
+						<p style="margin: 0">Alcohol may be less harmful for people over 50</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+						<p><i class="bi bi-clock"></i> 25 sept,2023</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+					
+						<div class="hospital-2-card-footer d-flex ">
+							<p><i class="bi bi-messenger"></i>99Comments</p>
+							<p> <i class="bi bi-eye"></i>99Views</p>
+							<p><i class="bi bi-balloon-heart" ></i>99Likes</p>
+							 
+						</div>
+					</div>
+					</div>
+				  </div>
+				</div>
+			  </li>
+
+			  <li>
+				<div class="img-card iCard-style1">
+				  <div class="card-content">
+					<div class="card-image" style="height: 200px !important;"> 
+					  <img 
+						src="./assets/hospital-2.webp"
+					  />
+					</div>
+					<div class="card-body" style="margin: 0; padding: 0">
+					  <p class="card-text text-primary" style="margin: 0">
+						Anesthesiology
+					</p>
+					  
+					  <div class="card-text" style="margin: 0">
+						<p style="margin: 0">Alcohol may be less harmful for people over 50</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+						<p><i class="bi bi-clock"></i> 25 sept,2023</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+					
+						<div class="hospital-2-card-footer d-flex ">
+							<p><i class="bi bi-messenger"></i>99Comments</p>
+							<p> <i class="bi bi-eye"></i>99Views</p>
+							<p><i class="bi bi-balloon-heart" ></i>99Likes</p>
+							 
+						</div>
+					</div>
+					</div>
+				  </div>
+				</div>
+			  </li>
+
+			  <li>
+				<div class="img-card iCard-style1">
+				  <div class="card-content">
+					<div class="card-image" style="height: 200px !important;"> 
+					  <img 
+						src="./assets/hospital-3.jpg"
+					  />
+					</div>
+					<div class="card-body" style="margin: 0; padding: 0">
+					  <p class="card-text text-primary" style="margin: 0">
+						Anesthesiology
+					</p>
+					  
+					  <div class="card-text" style="margin: 0">
+						<p style="margin: 0">Alcohol may be less harmful for people over 50</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+						<p><i class="bi bi-clock"></i> 25 sept,2023</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+					
+						<div class="hospital-2-card-footer d-flex ">
+							<p><i class="bi bi-messenger"></i>99Comments</p>
+							<p> <i class="bi bi-eye"></i>99Views</p>
+							<p><i class="bi bi-balloon-heart" ></i>99Likes</p>
+							 
+						</div>
+					</div>
+					</div>
+				  </div>
+				</div>
+			  </li>
+
+			  <li>
+				<div class="img-card iCard-style1">
+				  <div class="card-content">
+					<div class="card-image" style="height: 200px !important;"> 
+					  <img 
+						src="./assets/hospital-4.png"
+					  />
+					</div>
+					<div class="card-body" style="margin: 0; padding: 0">
+					  <p class="card-text text-primary" style="margin: 0">
+						Anesthesiology
+					</p>
+					  
+					  <div class="card-text" style="margin: 0">
+						<p style="margin: 0">Alcohol may be less harmful for people over 50</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+						<p><i class="bi bi-clock"></i> 25 sept,2023</p>
+					  </div>
+					  <div class="card-text" style="margin: 0">
+					
+						<div class="hospital-2-card-footer d-flex ">
+							<p><i class="bi bi-messenger"></i>99Comments</p>
+							<p> <i class="bi bi-eye"></i>99Views</p>
+							<p><i class="bi bi-balloon-heart" ></i>99Likes</p>
+							 
+						</div>
+					</div>
+					</div>
+				  </div>
+				</div>
+			  </li>
+  
+			  
+			</ul>
+		  </div>
+  
+		  <br />
+		</div>
+	  </section>
+    
+
+    <!-- ===========================Wordpress Doctreat Footer footer============================================== -->
+
+    <!-- <footer class="w-100 overflow-hidden upper-footer mt-2">
+      <div class="upper-footer container">
         <div class="invisible" style="margin-bottom: 40px">.</div>
         <div class="row">
           <div class="col-md-3 col-sm-6">
@@ -978,6 +1151,76 @@
           <br />
           All Rights Reserved.
         </h5>
+      </div>
+    </footer> -->
+
+    <!-- ================================Booking Health Footer =================================================== -->
+
+    <footer
+      class="d-flex justify-content-center align-items-center"
+      style="background-color: #e8f6ff; color: black"
+    >
+      <div class="row">
+        <div class="col-md-2 col-sm-4 m-auto">
+          <ul class="footer-list">
+            <li>About us</li>
+            <li>Search</li>
+            <li>Blogs</li>
+            <li>Impressions</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 m-auto">
+          <ul class="footer-list">
+            <li>Reviews</li>
+            <li>Contact</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Services</li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 m-auto">
+          <ul class="footer-list" style="font-size: 13px">
+            <li>Address:</li>
+            <li>Booking Health GmbH</li>
+            <li>Am Schafhaus 42</li>
+            <li>53557 Bad Hönningen Deutschland</li>
+
+            <!-- Address: Booking Health GmbH Am Schafhaus 42 53557 Bad Hönningen Deutschland
+
+Source: https://bookinghealth.com/
+© Bookinghealth.com -->
+          </ul>
+        </div>
+
+        <div
+          class="col-md-3 col-sm-6 d-flex footer-number align-items-center"
+          style="margin-left: -30px"
+        >
+          <div class="">
+            <ul class="footer-list">
+              <li><p class="m-1">+92-12345678</p></li>
+              <li><p class="m-1">For English Speakers</p></li>
+              <li><p class="m-1">+92-12345678</p></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 m-auto">
+          <div class="footer-icons d-flex">
+            <i class="bi bi-facebook footer-icon"></i>
+            <i class="bi bi-instagram footer-icon"></i>
+            <i class="bi bi-youtube footer-icon"></i>
+          </div>
+          <img
+            src="https://static.bookinghealth.com/i/img/SSL-trust.webp"
+            alt=""
+          />
+          <p>© 2023 Booking Health GmbH</p>
+          <img
+            src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=b78c9863-34dc-45a5-91bd-cd1604d0fca5"
+            alt=""
+          />
+        </div>
+
+        <!-- https://static.bookinghealth.com/i/img/SSL-trust.webp -->
       </div>
     </footer>
   </body>
